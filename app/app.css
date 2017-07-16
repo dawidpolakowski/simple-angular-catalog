@@ -1,8 +1,7 @@
 .sac-button-sort {
-    padding: 2px;
+    padding: 6px;
     background-color: whitesmoke;
     border: none;
-    width: 100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -20,17 +19,55 @@
     font-size: 16px;
 }
 
-.sac-search {
-    padding: 6px;
-    background-color: lightcyan;
-    border: 1px solid groove;
+.sac-button-nav {
+    padding: 1px;
+    background-color: #212121;
+    display: block;
     width: 100%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 22px;
 }
 
-.sac-search:hover {
+.sac-button-nav a {
+    color: white;
+}
+
+.sac-search {
+    padding: 2px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sac-panel {
+    padding: 12px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+
+.sac-view-text {
+    margin: 14px;
+    padding: 12px;
     background-color: white;
+    border: 1px solid black;
+}
+
+.sac-view-address {
+    font-size: 16;
+    margin: 14px;
+    padding: 12px;
+    background-color: lightcyan;
+    border: 1px solid black;
+}
+
+.sac-red {
+    color: red;
 }

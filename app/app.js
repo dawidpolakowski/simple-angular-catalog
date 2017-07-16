@@ -1,4 +1,4 @@
-var userModule = angular.module('userModule', ['ngRoute']);
+var userModule = angular.module('userModule', ['ngRoute', 'ngMap', 'ngAnimate']);
 
 userModule.config(function($routeProvider) {
     $routeProvider
@@ -28,4 +28,12 @@ userModule.controller('userModuleCtrlMain', function($scope, $http) {
         $scope.users = response.data;
     });
 
+});
+
+userModule.controller('userModuleCtrlMap', function(NgMap) {
+    NgMap.getMap().then(function(map) {
+        console.log(map.getCenter());
+        console.log('markers', map.markers);
+        console.log('shapes', map.shapes);
+    });
 });

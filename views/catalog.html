@@ -2,9 +2,11 @@
     <div class="col-sm-3">
         <span>Order by:</span><br>
         <button type="button" class="sac-button-sort" ng-click="order='_id'">id</button>
+        <button type="button" class="sac-button-sort" ng-click="order='name.first'">first name</button>
         <button type="button" class="sac-button-sort" ng-click="order='name.last'">last name</button>
-        <br><br>
-        <input type="text" class="sac-search" placeholder="Search user catalog" ng-model="search">
+        <button type="button" class="sac-button-sort" ng-click="order='balance'">balance</button>
+
+        <input type="text" class="sac-search" placeholder="search user by name ..." ng-model="search">
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="user in users | orderBy: order | filter:search">
 
@@ -14,37 +16,53 @@
         </ul>
     </div>
     <div class="col-sm-9">
-        <div class="demo-card-wide mdl-card mdl-shadow--4dp">
-            <div class="panel-heading">
-                <h2>{{userViewInfo}} <img ng-src="{{userView.picture}}" /> {{userView.name.first}} {{userView.name.last}}</h2>
-            </div>
+        <div class="sac-panel">
+
+            <h2>{{userViewInfo}} <img ng-src="{{userView.picture}}" /> {{userView.name.first}} {{userView.name.last}}</h2>
+
             <div class="panel-body glass" ng-hide="userViewStart">
-                <span>balance:{{userView.balance}}</span>
-                <span>age:{{userView.age}}</span>
-                <span>eyeColor:{{userView.eyeColor}}</span>
-                <span>favoriteFruit:{{userView.favoriteFruit}}</span>
-                <span>registered:<b>{{userView.registered}}</b></span>
-                <br>
-                <h4>company:{{userView.company}}</h4>
-                <h4>email:{{userView.email}}</h4>
-                <h4>phone:{{userView.phone}}</h4>
-                <h3>address:<br>{{userView.address}}</h3>
+                <h3>balance:<span class="sac-red">{{userView.balance}}</span></h3>
 
 
-                <div class="mdl-card__supporting-text">
+                <div class='sac-view-address'>
 
-                    about: {{userView.about}}
+                    <h4>email:{{userView.email}}</h4>
+                    <h4>phone:{{userView.phone}}</h4>
+                    <h3>address:<br>{{userView.address}}</h3>
+                </div>
+                about:
+                <div class="sac-view-text">
+
+                    {{userView.about}}
+                </div>
+                Summary:<br>
+                <div class='sac-view-address'>
+                    <span>company:{{userView.company}}</span><br>
+                    <span>age:{{userView.age}}</span><br>
+
+                    <span>registered:<b>{{userView.registered}}</b></span><br>
+                    <br>
+                    <span class="">
+            <b>Friends:</b>
+            <span ng-repeat="n in userView.friends">
+                    {{n.name}} ,
+                </span><br>
+                    <span>eyeColor: {{userView.eyeColor}}</span><br>
+                    <span>favoriteFruit: {{userView.favoriteFruit}}</span><br>
+                    </span>
+
+
+
                 </div>
 
-                {{userView.friends}} <br>{{userView.greeting}}
 
-                <hr>
+
+            </div>
+            <div ng-controller="userModuleCtrlMap">
+                <ng-map center="[{{userView.latitude}}, {{userView.longitude}}]" zoom="21"></ng-map>
             </div>
         </div>
-
-        </ul>
     </div>
-</div>
 
 
 </div>
