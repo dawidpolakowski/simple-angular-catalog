@@ -49,7 +49,8 @@
 
 .sac-panel {
     padding: 12px;
-    background-color: whitesmoke;
+    margin-top: 58px;
+    background-color: white;
     border: 1px solid gray;
 }
 
@@ -64,10 +65,25 @@
     font-size: 16;
     margin: 14px;
     padding: 12px;
-    background-color: lightcyan;
-    border: 1px solid black;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
 }
 
 .sac-red {
-    color: red;
+    color: green;
+}
+
+
+/* The starting CSS styles for the enter animation */
+
+main.ng-enter {
+    transition: 0.5s linear all;
+    opacity: 0;
+}
+
+
+/* The finishing CSS styles for the enter animation */
+
+main.ng-enter.ng-enter-active {
+    opacity: 1;
 }
