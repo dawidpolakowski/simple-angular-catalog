@@ -1,0 +1,49 @@
+<div class="row" ng-controller="userModuleCtrlMain">
+    <div class="col-sm-3">
+        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" ng-click="order='name.first'">Order by first names</button>
+        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" ng-click="order='name.last'">Order by last name</button>
+        <br><br>
+        <input type="text" class="form-control" placeholder="Search user catalog" ng-model="search">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="user in users | orderBy: order | filter:search">
+
+                <button type="button" class="mdl-button mdl-js-button mdl-button--raised " ng-click="getUser(user)">{{user.name.first}}
+	 {{user.name.last}} </button>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-9">
+        <div class="demo-card-wide mdl-card mdl-shadow--4dp">
+            <div class="panel-heading">
+                <h2>{{userViewInfo}} <img ng-src="{{userView.picture}}" /> {{userView.name.first}} {{userView.name.last}}</h2>
+            </div>
+            <div class="panel-body glass" ng-hide="userViewStart">
+                <span>balance:{{userView.balance}}</span>
+                <span>age:{{userView.age}}</span>
+                <span>eyeColor:{{userView.eyeColor}}</span>
+                <span>favoriteFruit:{{userView.favoriteFruit}}</span>
+                <span>registered:<b>{{userView.registered}}</b></span>
+                <br>
+                <h4>company:{{userView.company}}</h4>
+                <h4>email:{{userView.email}}</h4>
+                <h4>phone:{{userView.phone}}</h4>
+                <h3>address:<br>{{userView.address}}</h3>
+
+
+                <div class="mdl-card__supporting-text">
+
+                    about: {{userView.about}}
+                </div>
+
+                {{userView.friends}} <br>{{userView.greeting}}
+
+                <hr>
+            </div>
+        </div>
+
+        </ul>
+    </div>
+</div>
+
+
+</div>
