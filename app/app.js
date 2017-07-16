@@ -24,7 +24,7 @@ userModule.controller('userModuleCtrlMain', function($scope, $http) {
         $scope.userViewStart = false;
     };
 
-    $http.get('data/sample-data.json').then(function(response) {
+    $http.get('data/sample-data (1) (1) (1) (1).json').then(function(response) {
         $scope.users = response.data;
     });
 

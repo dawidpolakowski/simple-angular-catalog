@@ -1,13 +1,14 @@
 <div class="row" ng-controller="userModuleCtrlMain">
     <div class="col-sm-3">
-        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" ng-click="order='name.first'">Order by first names</button>
-        <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" ng-click="order='name.last'">Order by last name</button>
+        <span>Order by:</span><br>
+        <button type="button" class="sac-button-sort" ng-click="order='_id'">id</button>
+        <button type="button" class="sac-button-sort" ng-click="order='name.last'">last name</button>
         <br><br>
-        <input type="text" class="form-control" placeholder="Search user catalog" ng-model="search">
+        <input type="text" class="sac-search" placeholder="Search user catalog" ng-model="search">
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="user in users | orderBy: order | filter:search">
 
-                <button type="button" class="mdl-button mdl-js-button mdl-button--raised " ng-click="getUser(user)">{{user.name.first}}
+                <button type="button" class="sac-button-list" ng-click="getUser(user)">{{user.name.first}}
 	 {{user.name.last}} </button>
             </li>
         </ul>

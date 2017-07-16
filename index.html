@@ -2,21 +2,17 @@
 <html lang="en" ng-app="userModule">
 
 <head>
-    <title>AnotherAngularUserDirectory App</title>
-    <link rel="stylesheet" href="app\lib\bootstrap.min.css">
-    <link rel="stylesheet" href="app\lib\material.min.css">
-    <script src="app\lib\angular.min.js"></script>
-    <script src="app\lib\angular-route.min.js"></script>
-
+    <title>simple-angular-catalog</title>
+    <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
+    <script src="bower_components\angular\angular.min.js"></script>
+    <script src="bower_components\angular-route\angular-route.min.js"></script>
     <script src="app\app.js"></script>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="app\app.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-    <div class="container all">
+    <div class="container">
         <header ng-include="'navbar.html'"></header>
         <main ng-view></main>
 </body>
