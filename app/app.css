@@ -1,6 +1,9 @@
 html * {
-    color: #000 !important;
     font-family: Verdana !important;
+}
+
+nav {
+    color: white !important;
 }
 
 .sac-button-sort {

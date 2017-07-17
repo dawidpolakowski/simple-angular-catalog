@@ -41,4 +41,9 @@ Your zip package should contain all code, assets and installation instructions (
 
 To download this app you can go to https://github.com/dawidpolakowski/simple-angular-catalog and clone or downloade it.
 
+To view project, you can start Live server in your editor like Visual Studio Code for file \simple-angular-catalog\index.html or use any local server like WAMP.
+
+
+
+
 
