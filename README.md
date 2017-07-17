@@ -37,5 +37,8 @@ Your code should be delivered as a zip file via email
 Your zip package should contain all code, assets and installation instructions (if needed) in order to download packages.
 
 
+## Install and view Application
+
+To download this app you can go to https://github.com/dawidpolakowski/simple-angular-catalog and clone or downloade it.
 
 
