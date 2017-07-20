@@ -3,7 +3,7 @@ var userModule = angular.module('userModule', ['ngRoute', 'ngMap', 'ngAnimate'])
 userModule.config(function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "main.htm"
+            templateUrl: "views/home.html"
         })
         .when("/home", {
             templateUrl: "views/home.html"
