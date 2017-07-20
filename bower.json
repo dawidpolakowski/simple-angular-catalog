@@ -1,0 +1,26 @@
+{
+  "name": "simple-angular-catalog",
+  "description": "This is simple example angular user catalog application.",
+  "main": "index.html",
+  "authors": [
+    "Dawid Polakowski <dawidpolakowski@gamil.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angulatjs",
+    "tutorial",
+    "catalog"
+  ],
+  "homepage": "https://github.com/dawidpolakowski/simple-angular-catalog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.5",
+    "bootstrap": "^3.3.7"
+  }
+}
