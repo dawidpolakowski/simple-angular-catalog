@@ -1,6 +1,7 @@
 :root {
     --contentTextColor: #333;
     --text: grey;
+    --textSize: 12px;
     --bgColor: whitesmoke;
     --padding: 6px;
 }
@@ -21,7 +22,7 @@ nav {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 11px;
+    font-size: var(--textSize);
 }
 
 .sac-button-list {
@@ -32,7 +33,7 @@ nav {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: var(--textSize);
 }
 
 .sac-button-nav {
@@ -58,7 +59,7 @@ nav {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 11px;
+    font-size: var(--textSize);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -78,7 +79,7 @@ nav {
 }
 
 .sac-view-address {
-    font-size: 16;
+    font-size: var(--textSize);
     margin: 14px;
     padding: var(--padding);
     background-color: var(--bgColor);

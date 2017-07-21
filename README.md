@@ -44,7 +44,8 @@ to start work witch app you must clone it using git or NPM.
 
 Aplication is NPM package to start work you can use :
 
- npm install    - to check all project librarys 
+ npm install    - to check all npm necesary packages
+ bower install  - to check all project librarys 
  npm start      - to run local server 
  
 
