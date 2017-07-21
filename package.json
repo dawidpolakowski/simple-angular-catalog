@@ -1,27 +1,29 @@
 {
-  "name": "simple-angular-catalog",
-  "version": "1.0.2",
-  "description": "This is simple example angular user catalog application.",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dawidpolakowski/simple-angular-catalog.git"
-  },
-  "keywords": [
-    "angulatjs",
-    "tutorial",
-    "catalog"
-  ],
-  "author": "Dawid Polakowski <dawidpolakowski@gamil.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dawidpolakowski/simple-angular-catalog/issues"
-  },
-  "homepage": "https://github.com/dawidpolakowski/simple-angular-catalog#readme",
-  "dependencies": {
-    "bower": "^1.8.0"
-  }
+    "name": "simple-angular-catalog",
+    "version": "1.0.2",
+    "description": "This is simple example angular user catalog application.",
+    "main": "index.html",
+    "scripts": {
+        "prestart": "npm install",
+        "start": "http-server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dawidpolakowski/simple-angular-catalog.git"
+    },
+    "keywords": [
+        "angulatjs",
+        "tutorial",
+        "catalog"
+    ],
+    "author": "Dawid Polakowski <dawidpolakowski@gamil.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dawidpolakowski/simple-angular-catalog/issues"
+    },
+    "homepage": "https://github.com/dawidpolakowski/simple-angular-catalog#readme",
+    "dependencies": {
+        "bower": "^1.8.0"
+    }
 }

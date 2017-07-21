@@ -9,47 +9,41 @@
         <input type="text" class="sac-search" placeholder="search user by name ..." ng-model="search">
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="user in users | orderBy: order | filter:search">
-
                 <button type="button" class="sac-button-list" ng-click="getUser(user)">{{user.name.first}}
-	 {{user.name.last}} </button>
+                {{user.name.last}} 
+                </button>
             </li>
         </ul>
     </div>
     <div class="col-sm-9">
         <div class="sac-panel">
 
-            <h2>{{userViewInfo}} <img ng-src="{{userView.picture}}" /> {{userView.name.first}} {{userView.name.last}}</h2>
-
+            <h2>{{userViewInfo}} <img ng-src="{{userView.picture}}" /> {{userView.name.first}} {{userView.name.last}}
+            </h2>
             <div class="panel-body glass" ng-hide="userViewStart">
-                <h3>balance:<span class="sac-red">{{userView.balance}}</span></h3>
 
-
+                <p>Contact:</p>
                 <div class='sac-view-address'>
-
-                    <h4>email:{{userView.email}}</h4>
-                    <h4>phone:{{userView.phone}}</h4>
-                    <h3>address:<br>{{userView.address}}</h3>
+                    <p>email:{{userView.email}}</p>
+                    <p>phone:{{userView.phone}}</p>
+                    <p>address:<br>{{userView.address}}</p>
                 </div>
-                about:
+                <p>About:</p>
                 <div class="sac-view-text">
-
                     {{userView.about}}
                 </div>
-                Summary:<br>
+                <p>Summary:</p>
                 <div class='sac-view-address'>
-                    <span>company:{{userView.company}}</span><br>
-                    <span>age:{{userView.age}}</span><br>
-
-                    <span>registered:<b>{{userView.registered}}</b></span><br>
-                    <br>
-                    <span class="">
-            <b>Friends:</b>
-            <span ng-repeat="n in userView.friends">
-                    {{n.name}} ,
-                </span><br>
-                    <span>eyeColor: {{userView.eyeColor}}</span><br>
-                    <span>favoriteFruit: {{userView.favoriteFruit}}</span><br>
-                    </span>
+                    <p>company:{{userView.company}}</p>
+                    <p>balance:{{userView.balance}}</p>
+                    <p>age:{{userView.age}}</p>
+                    <p>registered:<b>{{userView.registered}}</b></p>
+                    <b>Friends:</b>
+                    <b ng-repeat="n in userView.friends">
+                        {{n.name}} ,
+                    </b>
+                    <p>eyeColor: {{userView.eyeColor}}</p>
+                    <p>favoriteFruit: {{userView.favoriteFruit}}</p>
                 </div>
             </div>
             <div ng-controller="userModuleCtrlMap">
@@ -57,6 +51,4 @@
             </div>
         </div>
     </div>
-
-
 </div>

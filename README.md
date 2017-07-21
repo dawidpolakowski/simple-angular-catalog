@@ -39,11 +39,21 @@ Your zip package should contain all code, assets and installation instructions (
 
 ## Install and view Application
 
-To download this app you can go to https://github.com/dawidpolakowski/simple-angular-catalog and clone or downloade it.
+Project is stored in repository https://github.com/dawidpolakowski/simple-angular-catalog.git
+to start work witch app you must clone it using git or NPM.
 
-To view project, you can start Live server in your editor like Visual Studio Code for file \simple-angular-catalog\index.html or use any local server like WAMP.
+Aplication is NPM package to start work you can use :
 
+ npm install    - to check all project librarys 
+ npm start      - to run local server 
+ 
 
+After starting up http-server, serving available on:
+  http://192.168.1.5:8080
+  http://127.0.0.1:8080
 
+Have nice working with my App.
 
+BR
+Dawid Polakowski
 
