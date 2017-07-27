@@ -4,9 +4,10 @@
     "description": "This is simple example angular user catalog application.",
     "main": "index.html",
     "scripts": {
-        "prestart": "npm install",
-        "start": "http-server",
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "update-deps": "npm update",
+    "postupdate-deps": "bower update",
+    "start": "http-server -a localhost -p 8080 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",

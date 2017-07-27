@@ -1,5 +1,14 @@
 var userModule = angular.module('userModule', ['ngRoute', 'ngMap', 'ngAnimate']);
 
+userModule.factory('userFactory', function($http) {
+    return {
+        getAllUsers: function() {
+            var url = "data/sample-data (1) (1) (1) (1).json";
+            return $http.get(url);
+        }
+    };
+});
+
 userModule.config(function($routeProvider) {
     $routeProvider
         .when("/", {
@@ -15,7 +24,10 @@ userModule.config(function($routeProvider) {
         .otherwise("/home");
 });
 
-userModule.controller('userModuleCtrlMain', function($scope, $http) {
+userModule.controller('userModuleCtrlMain', function($scope, userFactory) {
+
+    userFactory.getAllUsers().success(function(users) {$scope.users = users});
+
     $scope.userViewInfo = "Chose a user to dispaly";
     $scope.userViewStart = true;
     $scope.getUser = function(user) {
@@ -24,10 +36,7 @@ userModule.controller('userModuleCtrlMain', function($scope, $http) {
         $scope.userViewStart = false;
     };
 
-    $http.get('data/sample-data (1) (1) (1) (1).json').then(function(response) {
-        $scope.users = response.data;
-    });
-
+   
 });
 
 userModule.controller('userModuleCtrlMap', function(NgMap) {
