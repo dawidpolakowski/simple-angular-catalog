@@ -1,5 +1,7 @@
 # simple-angular-catalog Application
 
+This project is test application to check my AngularJS programming skills.
+This app can bring you some experience with building working Angular project using basic angular libraries.
 
 ## Overview
 
@@ -40,20 +42,18 @@ Your zip package should contain all code, assets and installation instructions (
 ## Install and view Application
 
 Project is stored in repository https://github.com/dawidpolakowski/simple-angular-catalog.git
-to start work witch app you must clone it using git or NPM.
+to start work witch app you can clone it using git or NPM.
 
-Aplication is NPM package to start work you can use :
+    <project-dir> git clone https://github.com/dawidpolakowski/simple-angular-catalog.git
 
- npm install    - to check all npm necesary packages
- bower install  - to check all project librarys 
- npm start      - to run local server 
+Aplication is NPM package, to start work you can use :
+
+    npm start     
+
+ It will install all necesary npm packages and run bower to add dependances librarys.
+
  
-
-After starting up http-server, serving available on:
-  http://192.168.1.5:8080
-  http://127.0.0.1:8080
-
-Have nice working with my App.
+Wish you a nice working with my app!
 
 BR
 Dawid Polakowski
